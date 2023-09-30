@@ -1,20 +1,4 @@
-@font-face {
-    font-family: "Avenir";
-    src: url(../Assets/Font/AvenirNextLTPro-Bold.otf);
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Avenir";
-    src: url(../Assets/Font/AvenirNextLTPro-Demi.otf);
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Avenir";
-    src: url(../Assets/Font/AvenirNextLTPro-Regular.otf);
-    font-weight: 400;
-}
+@use "./_partials/fonts" as *;
 
 body {
     font-family: "Avenir";
@@ -46,29 +30,24 @@ nav {
     font-size: 14px;
 }
 
-.nav__item {
+.nav__list__item {
     list-style-type: none;
     width: 100%;
     text-align: center;
-    
 }
 
 .nav__anchor {
-    color: white;
     text-decoration: none;
-    
+    color: white;
 }
 
-.nav__item--active {
+.nav__list__item--active {
     border-bottom: 4px solid white;
     padding-bottom: 10px;
-}
-
-.nav__item--active:active {
     font-weight: 700;
 }
 
-.nav__item--inactive {
+.nav__anchor--inactive {
     color: #E1E1E1;
 }
 
@@ -98,13 +77,17 @@ nav {
 
 }
 
+.section__title {
+    font-weight: 600;
+    padding-top: 24px;
+    margin-block-start: 0;
+}
+
+
+
 /* About Section */
 .about {
     padding: 0 1rem;
-}
-
-.about__title {
-    font-weight: 600;
 }
 
 .image {
@@ -138,10 +121,6 @@ nav {
     padding: 0 1rem;
 }
 
-.photos__title {
-    font-weight: 600;
-    padding-top: 24px;
-}
 
 // Footer Section
 .footer {
@@ -149,17 +128,12 @@ nav {
     padding: 0 1rem;
 }
 
-.footer__title {
+.section__title--white {
     color: white;
-    font-weight: 600;
-    margin-block-start: 0;
-    padding-top: 24px;
 }
 
 .footer__socials {
-    display: flex;
-    justify-content: space-between;
-    width: 35%;
+  padding-right: 24px;
 }
 
 .logo--hidden {
