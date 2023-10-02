@@ -35,6 +35,12 @@ nav {
     box-sizing: border-box;
   }
 }
+@media (min-width: 1280px) {
+  nav {
+    padding-left: 120px;
+    padding-top: 36px;
+  }
+}
 
 .bandsite__logo {
   height: 20px;
@@ -85,17 +91,21 @@ nav {
 }
 @media (min-width: 768px) {
   .nav__list__item--active {
-    border-bottom: 2px solid white;
     padding-bottom: 30px;
+    width: 70px;
   }
 }
-
 .nav__anchor--inactive {
   color: #E1E1E1;
 }
 @media (min-width: 768px) {
   .nav__anchor--inactive {
     padding-left: 44px;
+  }
+}
+@media (min-width: 1280px) {
+  .nav__anchor--inactive {
+    padding-left: 0;
   }
 }
 
@@ -105,7 +115,7 @@ nav {
   aspect-ratio: 16/9;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 }
 
 .hero--overlay {
@@ -128,6 +138,11 @@ nav {
     padding-left: 36px;
   }
 }
+@media (min-width: 1280px) {
+  .hero__title {
+    padding-left: 120px;
+  }
+}
 
 .section__title {
   font-size: 24px;
@@ -139,7 +154,9 @@ nav {
   .section__title {
     font-size: 36px;
     margin-block-end: 0;
-    padding: 0 0 36px;
+    margin-block-start: 0;
+    padding-bottom: 36px;
+    padding-top: 0;
   }
 }
 
@@ -152,10 +169,20 @@ nav {
     padding: 48px 36px 36px;
   }
 }
+@media (min-width: 1280px) {
+  .about {
+    padding: 48px 120px 36px;
+  }
+}
 
 @media (min-width: 768px) {
   .about__container {
     padding: 0 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .about__container {
+    padding: 0 80px;
   }
 }
 
@@ -224,6 +251,11 @@ nav {
     padding: 48px 36px 6px;
   }
 }
+@media (min-width: 1280px) {
+  .photos {
+    padding: 48px 120px 16px;
+  }
+}
 
 @media (min-width: 768px) {
   .photo-container--flex {
@@ -239,6 +271,12 @@ nav {
     padding-bottom: 30px;
   }
 }
+@media (min-width: 1280px) {
+  .image--flex {
+    width: 32%;
+    padding-bottom: 20px;
+  }
+}
 
 .footer {
   background-color: #323232;
@@ -247,6 +285,11 @@ nav {
 @media (min-width: 768px) {
   .footer {
     padding: 48px 36px 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .footer {
+    padding: 48px 120px 36px;
   }
 }
 
@@ -258,8 +301,16 @@ nav {
 }
 
 @media (min-width: 768px) {
+  .footer__container--max-width {
+    width: 700px;
+  }
+}
+
+@media (min-width: 768px) {
   .footer__container--flex {
     display: flex;
+    justify-content: space-between;
+    width: 23.7rem;
   }
 }
 
@@ -272,7 +323,6 @@ nav {
   .footer__container__socials--flex {
     display: flex;
     align-items: end;
-    padding-left: 30px;
     padding-bottom: 44px;
   }
 }
@@ -304,6 +354,7 @@ nav {
     padding-top: 0;
     line-height: 20px;
     margin-block-start: 0;
+    margin-block-end: 1.5rem;
   }
 }
 
@@ -319,6 +370,7 @@ nav {
     padding-top: 0;
     line-height: 20px;
     margin-block-start: 0;
+    margin-block-end: 1.5rem;
   }
 }
 

@@ -21,6 +21,11 @@ nav {
         padding-top: 30px;
         box-sizing: border-box;
     }
+
+    @include desktop {
+        padding-left: 120px;
+        padding-top: 36px;
+    }
 }
 
 .bandsite__logo {
@@ -68,8 +73,13 @@ nav {
     font-weight: 600;
 
     @include tablet {
-        border-bottom: 2px solid white;
+        // border-bottom: 2px solid white;
         padding-bottom: 30px;
+        width: 70px;
+    }
+
+    @include desktop {
+        // width: 70px;
     }
 }
 
@@ -79,6 +89,10 @@ nav {
     @include tablet {
         padding-left: 44px;
     }
+
+    @include desktop {
+        padding-left: 0;
+    }
 }
 
 /* Main */
@@ -87,7 +101,7 @@ nav {
     aspect-ratio: 16/9;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 
 .hero--overlay {
@@ -109,6 +123,10 @@ nav {
         font-size: 60px;
         padding-left: 36px;
     }
+
+    @include desktop {
+        padding-left: 120px;
+    }
 }
 
 .section__title {
@@ -121,8 +139,11 @@ nav {
     @include tablet {
         font-size: 36px;
         margin-block-end: 0;
-        padding: 0 0 36px;
+        margin-block-start: 0;
+        padding-bottom: 36px;
+        padding-top: 0;
     }
+
 }
 
 
@@ -134,11 +155,19 @@ nav {
     @include tablet {
         padding: 48px 36px 36px;
     }
+
+    @include desktop {
+        padding: 48px 120px 36px;
+    }
 }
 
 .about__container {
     @include tablet {
         padding: 0 60px;
+    }
+
+    @include desktop {
+        padding: 0 80px
     }
 }
 
@@ -203,6 +232,10 @@ nav {
     @include tablet {
         padding: 48px 36px 6px;
     }
+
+    @include desktop {
+        padding: 48px 120px 16px;
+    }
 }
 
 .photo-container--flex {
@@ -218,6 +251,11 @@ nav {
         width: 31%;
         padding-bottom: 30px;
     }
+
+    @include desktop {
+        width: 32%;
+        padding-bottom: 20px;
+    }
 }
 
 
@@ -229,6 +267,10 @@ nav {
     @include tablet {
         padding: 48px 36px 36px;
     }
+
+    @include desktop {
+        padding: 48px 120px 36px;
+    }
 }
 
 .footer__container {
@@ -238,9 +280,18 @@ nav {
     }
 }
 
+.footer__container--max-width {
+    @include tablet {
+        width: 700px;
+    }
+}
+
 .footer__container--flex {
     @include tablet {
         display: flex;
+        justify-content: space-between;
+        width: 23.7rem;
+        
     }
 }
 
@@ -253,7 +304,6 @@ nav {
     @include tablet {
         display: flex;
         align-items: end;
-        padding-left: 30px;
         padding-bottom: 44px;
     }
 }
@@ -282,6 +332,7 @@ nav {
         padding-top: 0;
         line-height: 20px;
         margin-block-start: 0;
+        margin-block-end: 1.5rem;
     }
 }
 
@@ -296,6 +347,7 @@ nav {
         padding-top: 0;
         line-height: 20px;
         margin-block-start: 0;
+        margin-block-end: 1.5rem;
     }
 }
 
