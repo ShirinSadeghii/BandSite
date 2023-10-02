@@ -242,6 +242,12 @@ nav {
   }
 }
 
+@media (min-width: 768px) {
+  .about__body--remove-padding {
+    padding-right: 0;
+  }
+}
+
 .photos {
   background-color: #FAFAFA;
   padding: 0 1rem;

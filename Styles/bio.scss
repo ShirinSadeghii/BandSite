@@ -224,6 +224,12 @@ nav {
 
 }
 
+.about__body--remove-padding {
+    @include tablet {
+        padding-right: 0;
+    }
+}
+
 // Photos Section
 .photos {
     background-color: #FAFAFA;
@@ -284,6 +290,7 @@ nav {
     @include tablet {
         width: 700px;
     }
+
 }
 
 .footer__container--flex {
@@ -291,7 +298,6 @@ nav {
         display: flex;
         justify-content: space-between;
         width: 23.7rem;
-        
     }
 }
 
