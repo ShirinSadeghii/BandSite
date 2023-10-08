@@ -39,6 +39,7 @@ nav {
   nav {
     padding-left: 7.5rem;
     padding-top: 2.25rem;
+    padding-left: 6rem;
   }
 }
 
@@ -61,6 +62,7 @@ nav {
   padding-inline-start: 0;
   margin: 0;
   font-size: 14px;
+  list-style-type: none;
 }
 @media (min-width: 768px) {
   .nav__list {
@@ -68,13 +70,12 @@ nav {
   }
 }
 
-.nav__list__item {
-  list-style-type: none;
+.nav__list-item {
   width: 100%;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .nav__list__item {
+  .nav__list-item {
     width: 12%;
   }
 }
@@ -84,20 +85,20 @@ nav {
   color: white;
 }
 
-.nav__list__item--active {
+.nav__list-item--active {
   border-bottom: 4px solid white;
   padding-bottom: 0.625rem;
   font-weight: 600;
 }
 @media (min-width: 768px) {
-  .nav__list__item--active {
+  .nav__list-item--active {
     padding-bottom: 1.9rem;
     width: 4.4rem;
   }
 }
 
 .nav__anchor--inactive {
-  color: #E1E1E1;
+  color: #e1e1e1;
 }
 @media (min-width: 768px) {
   .nav__anchor--inactive {
@@ -149,7 +150,7 @@ nav {
   font-size: 1.5rem;
   font-weight: 600;
   padding-top: 1.5rem;
-  margin-block-start: 0.5rem;
+  margin-block-start: 0rem;
 }
 @media (min-width: 768px) {
   .section__title {
@@ -162,16 +163,16 @@ nav {
 }
 
 /* About Section */
-.about {
+.section {
   padding: 0 1rem;
 }
 @media (min-width: 768px) {
-  .about {
+  .section {
     padding: 3rem 2.25rem 2.25rem;
   }
 }
 @media (min-width: 1280px) {
-  .about {
+  .section {
     padding: 3rem 7.5rem 2.25rem;
   }
 }
@@ -250,7 +251,7 @@ nav {
 }
 
 .photos {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 0 1rem;
 }
 @media (min-width: 768px) {
@@ -265,7 +266,7 @@ nav {
 }
 
 @media (min-width: 768px) {
-  .photo-container--flex {
+  .photos-container--flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -283,6 +284,145 @@ nav {
     width: 32%;
     padding-bottom: 1.25rem;
   }
+}
+
+.comment__container--flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment__new-comment {
+  display: flex;
+  justify-content: space-around;
+}
+
+.comment__icon {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.form__field {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-bottom: 4px;
+  color: #AFAFAF;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.form__field--margin {
+  margin-block-start: 1rem;
+}
+
+.input__field {
+  border-radius: 4px;
+  min-width: 70vw;
+  padding: 8px;
+  height: 36px;
+  padding-block: 0;
+  background-color: #FAFAFA;
+  border: 1px solid #E1E1E1;
+  outline: none;
+}
+
+.input__field:focus {
+  border: 1px solid #323232;
+}
+
+.input__field--height {
+  height: 60px;
+  font-family: "Avenir";
+  margin-bottom: 1rem;
+  padding-top: 8px;
+}
+
+.comment__button {
+  background-color: #323232;
+  color: white;
+  display: flex;
+  min-width: 100%;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .comment__button {
+    min-width: 30%;
+    position: relative;
+    left: 70%;
+  }
+}
+
+.comment__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+}
+
+.comment__item--border {
+  border-top: 1px solid #E1E1E1;
+}
+
+.comment__item--border::after {
+  border-top: 1px solid #e1e1e1;
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  height: 50%;
+  width: 1px;
+}
+
+.comment__item {
+  border-bottom: 1px solid #E1E1E1;
+  padding-top: 16px;
+}
+
+.comment__parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment__avatar {
+  background-color: #E1E1E1;
+  position: relative;
+  right: -2%;
+}
+@media (min-width: 768px) {
+  .comment__avatar {
+    right: -8%;
+  }
+}
+
+.comment__container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.comment__details--bold {
+  font-weight: 600;
+}
+
+.comment__details--color {
+  color: #AFAFAF;
+}
+
+.comment__details--position {
+  position: relative;
+  left: 15%;
+  top: -0.5rem;
+  margin-block-start: 0;
+  width: 80%;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .footer {
@@ -327,7 +467,7 @@ nav {
 }
 
 @media (min-width: 768px) {
-  .footer__container__socials--flex {
+  .footer__socials--flex {
     display: flex;
     align-items: end;
     padding-bottom: 2.75rem;
