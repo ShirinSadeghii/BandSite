@@ -295,6 +295,19 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+@media (min-width: 768px) {
+  .comment__new-comment {
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 1280px) {
+  .comment__new-comment {
+    width: 50vw;
+    position: relative;
+    left: 20%;
+    justify-content: center;
+  }
+}
 
 .comment__icon {
   border-radius: 50%;
@@ -304,6 +317,21 @@ nav {
      object-fit: cover;
   -o-object-position: left;
      object-position: left;
+  position: relative;
+  top: 16px;
+}
+@media (min-width: 768px) {
+  .comment__icon {
+    height: 50px;
+    width: 50px;
+    top: 24px;
+    right: -16px;
+  }
+}
+@media (min-width: 1280px) {
+  .comment__icon {
+    margin-right: 32px;
+  }
 }
 
 .form__field {
@@ -311,8 +339,13 @@ nav {
   margin-block-end: 0;
   padding-bottom: 4px;
   color: #AFAFAF;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  .form__field {
+    font-size: 14px;
+  }
 }
 
 .form__field--margin {
@@ -322,23 +355,54 @@ nav {
 .input__field {
   border-radius: 4px;
   min-width: 70vw;
-  padding: 8px;
   height: 36px;
+  padding: 12px;
   padding-block: 0;
   background-color: #FAFAFA;
   border: 1px solid #E1E1E1;
   outline: none;
+}
+@media (min-width: 768px) {
+  .input__field {
+    padding: 16px;
+  }
+}
+@media (min-width: 1280px) {
+  .input__field {
+    min-width: 32vw;
+  }
 }
 
 .input__field:focus {
   border: 1px solid #323232;
 }
 
+::-moz-placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+::placeholder {
+  color: black;
+  font-size: 16px;
+}
+
 .input__field--height {
-  height: 60px;
+  height: 96px;
   font-family: "Avenir";
   margin-bottom: 1rem;
-  padding-top: 8px;
+  padding: 12px;
+}
+@media (min-width: 768px) {
+  .input__field--height {
+    padding-top: 16px;
+    padding-left: 16px;
+  }
+}
+@media (min-width: 1280px) {
+  .input__field--height {
+    min-width: 32vw;
+  }
 }
 
 .comment__button {
@@ -347,7 +411,7 @@ nav {
   display: flex;
   min-width: 100%;
   justify-content: center;
-  padding: 12px;
+  padding: 16px;
   border-radius: 4px;
   border-style: none;
   font-size: 18px;
@@ -359,12 +423,31 @@ nav {
     left: 70%;
   }
 }
+@media (min-width: 1280px) {
+  .comment__button {
+    min-width: 40%;
+    left: 60%;
+  }
+}
 
 .comment__list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   padding-inline-start: 0;
+  width: 90vw;
+}
+@media (min-width: 768px) {
+  .comment__list {
+    width: 86.5vw;
+  }
+}
+@media (min-width: 1280px) {
+  .comment__list {
+    width: 42vw;
+    position: relative;
+    left: 23.5%;
+  }
 }
 
 .comment__item--border {
@@ -384,31 +467,49 @@ nav {
   border-bottom: 1px solid #E1E1E1;
   padding-top: 16px;
 }
+@media (min-width: 768px) {
+  .comment__item {
+    padding-top: 24px;
+  }
+}
 
 .comment__parent {
   display: flex;
   justify-content: space-between;
+  height: 40px;
 }
 
 .comment__avatar {
   background-color: #E1E1E1;
   position: relative;
-  right: -2%;
+  right: -4%;
 }
 @media (min-width: 768px) {
   .comment__avatar {
-    right: -8%;
+    right: -7%;
+    top: -4px;
+  }
+}
+@media (min-width: 1280px) {
+  .comment__avatar {
+    right: -5%;
   }
 }
 
 .comment__container {
   display: flex;
   justify-content: space-between;
-  width: 85%;
+  width: 86%;
 }
 
 .comment__details--bold {
   font-weight: 600;
+  margin-left: 1.5rem;
+}
+@media (min-width: 768px) {
+  .comment__details--bold {
+    margin-left: 1rem;
+  }
 }
 
 .comment__details--color {
@@ -417,12 +518,19 @@ nav {
 
 .comment__details--position {
   position: relative;
-  left: 15%;
+  left: 14%;
   top: -0.5rem;
   margin-block-start: 0;
   width: 80%;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
+  margin-left: 1.5rem;
+}
+@media (min-width: 768px) {
+  .comment__details--position {
+    margin-left: 1rem;
+    line-height: 24px;
+  }
 }
 
 .footer {
