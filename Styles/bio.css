@@ -66,7 +66,7 @@ nav {
 @media (min-width: 768px) {
   .nav__list {
     justify-content: flex-start;
-    padding-left: 36px;
+    padding-left: 2.25rem;
   }
 }
 
@@ -86,7 +86,7 @@ nav {
 }
 
 .nav__list-item--active {
-  border-bottom: 4px solid white;
+  border-bottom: 0.25rem solid white;
   padding-bottom: 0.625rem;
   font-weight: 600;
 }
@@ -318,33 +318,33 @@ nav {
   -o-object-position: left;
      object-position: left;
   position: relative;
-  top: 16px;
+  top: 1rem;
 }
 @media (min-width: 768px) {
   .comment__icon {
-    height: 50px;
-    width: 50px;
-    top: 24px;
-    right: -16px;
+    height: 3.125rem;
+    width: 3.125rem;
+    top: 1.5rem;
+    right: -1rem;
   }
 }
 @media (min-width: 1280px) {
   .comment__icon {
-    margin-right: 32px;
+    margin-right: 2rem;
   }
 }
 
 .form__field {
   margin-block-start: 0;
   margin-block-end: 0;
-  padding-bottom: 4px;
+  padding-bottom: 0.25rem;
   color: #AFAFAF;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
 }
 @media (min-width: 768px) {
   .form__field {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
@@ -353,10 +353,10 @@ nav {
 }
 
 .input__field {
-  border-radius: 4px;
+  border-radius: 0.25rem;
   min-width: 70vw;
-  height: 36px;
-  padding: 12px;
+  height: 2.25rem;
+  padding: 0.75rem;
   padding-block: 0;
   background-color: #FAFAFA;
   border: 1px solid #E1E1E1;
@@ -364,7 +364,7 @@ nav {
 }
 @media (min-width: 768px) {
   .input__field {
-    padding: 16px;
+    padding: 1rem;
   }
 }
 @media (min-width: 1280px) {
@@ -379,24 +379,24 @@ nav {
 
 ::-moz-placeholder {
   color: black;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 ::placeholder {
   color: black;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .input__field--height {
-  height: 96px;
+  height: 6rem;
   font-family: "Avenir";
   margin-bottom: 1rem;
-  padding: 12px;
+  padding: 0.75rem;
 }
 @media (min-width: 768px) {
   .input__field--height {
-    padding-top: 16px;
-    padding-left: 16px;
+    padding-top: 1rem;
+    padding-left: 1rem;
   }
 }
 @media (min-width: 1280px) {
@@ -411,10 +411,10 @@ nav {
   display: flex;
   min-width: 100%;
   justify-content: center;
-  padding: 16px;
-  border-radius: 4px;
+  padding: 1rem;
+  border-radius: 0.25rem;
   border-style: none;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media (min-width: 768px) {
   .comment__button {
@@ -471,18 +471,18 @@ nav {
 
 .comment__item {
   border-bottom: 1px solid #E1E1E1;
-  padding-top: 16px;
+  padding-top: 1rem;
 }
 @media (min-width: 768px) {
   .comment__item {
-    padding-top: 24px;
+    padding-top: 1.5rem;
   }
 }
 
 .comment__parent {
   display: flex;
   justify-content: space-between;
-  height: 40px;
+  height: 2.5rem;
 }
 
 .comment__avatar {
@@ -493,7 +493,7 @@ nav {
 @media (min-width: 768px) {
   .comment__avatar {
     right: -7%;
-    top: -4px;
+    top: -0.25rem;
   }
 }
 @media (min-width: 1280px) {
@@ -528,14 +528,14 @@ nav {
   top: -0.5rem;
   margin-block-start: 0;
   width: 80%;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   margin-left: 1.5rem;
 }
 @media (min-width: 768px) {
   .comment__details--position {
     margin-left: 1rem;
-    line-height: 24px;
+    line-height: 1.5rem;
   }
 }
 
