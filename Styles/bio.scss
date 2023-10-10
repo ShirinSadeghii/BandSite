@@ -35,7 +35,7 @@ nav {
   padding-bottom: 1rem;
 
   @include tablet {
-    padding-right: 3.75rem;
+    // padding-right: 3.75rem;
     padding-bottom: 1.9rem;
   }
 }
@@ -51,6 +51,7 @@ nav {
 
   @include tablet {
     justify-content: flex-start;
+    padding-left: 36px;
   }
 }
 
@@ -395,10 +396,16 @@ nav {
   }
 
   @include desktop {
-    width: 42vw;
+    width: 60vw;
     position: relative;
     left: 23.5%;
 }
+}
+
+.comment__list--bio {
+  @include desktop {
+    width: 42vw;
+  }
 }
 
 .comment__item--border {
@@ -448,7 +455,7 @@ nav {
 .comment__container {
   display: flex;
   justify-content: space-between;
-  width: 86%;
+  width: 100%;
 }
 
 .comment__details--bold {
