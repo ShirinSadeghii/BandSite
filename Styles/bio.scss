@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-nav {
+.nav {
   background-color: #393939;
   display: flex;
   width: 100%;
@@ -53,16 +53,17 @@ nav {
     justify-content: flex-start;
     padding-left: 2.25rem;
   }
-}
 
-.nav__list-item {
-  width: 100%;
-  text-align: center;
-
-  @include tablet {
-    width: 12%;
+  &-item {
+    width: 100%;
+    text-align: center;
+  
+    @include tablet {
+      width: 12%;
+    }
   }
 }
+
 
 .nav__anchor {
   text-decoration: none;
@@ -99,19 +100,18 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-}
 
-.hero--overlay {
-  aspect-ratio: 16/9;
-  background-color: #32323250;
-  display: flex;
-  align-items: center;
-}
+  &--overlay {
+    aspect-ratio: 16/9;
+    background-color: #32323250;
+    display: flex;
+    align-items: center;
+  }
 
-.hero__title {
+  &__title {
   margin-block-start: 0;
   color: rgb(255, 255, 255);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding-left: 1rem;
   font-weight: 600;
 
@@ -123,9 +123,38 @@ nav {
   @include desktop {
     padding-left: 7.5rem;
   }
+  }
 }
 
-.section__title {
+
+// .section__title {
+//   font-size: 1.5rem;
+//   font-weight: 600;
+//   padding-top: 1.5rem;
+//   margin-block-start: 0rem;
+
+//   @include tablet {
+//     font-size: 2.25rem;
+//     margin-block-end: 0;
+//     margin-block-start: 0;
+//     padding-bottom: 2.25rem;
+//     padding-top: 0;
+//   }
+// }
+
+/* About Section */
+.section {
+  padding: 0 1rem;
+
+  @include tablet {
+    padding: 3rem 2.25rem 2.25rem;
+  }
+
+  @include desktop {
+    padding: 3rem 7.5rem 2.25rem;
+  }
+
+  &__title {
   font-size: 1.5rem;
   font-weight: 600;
   padding-top: 1.5rem;
@@ -140,17 +169,6 @@ nav {
   }
 }
 
-/* About Section */
-.section {
-  padding: 0 1rem;
-
-  @include tablet {
-    padding: 3rem 2.25rem 2.25rem;
-  }
-
-  @include desktop {
-    padding: 3rem 7.5rem 2.25rem;
-  }
 }
 
 
@@ -186,17 +204,18 @@ nav {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  &--resize {
+    @include tablet {
+      font-size: 1.13rem;
+    }
 }
 
-.about__subheader--resize {
-  @include tablet {
-    font-size: 1.13rem;
+  &--padding {
+    padding-top: 1.5rem;
   }
 }
 
-.about__subheader--padding {
-  padding-top: 1.5rem;
-}
 
 .container--flex {
   @include tablet {
@@ -214,13 +233,14 @@ nav {
     padding-right: 1.5rem;
     margin-block-end: 0;
   }
-}
 
-.about__body--remove-padding {
-  @include tablet {
-    padding-right: 0;
+  &--remove-padding {
+    @include tablet {
+      padding-right: 0;
+    }
   }
 }
+
 
 // Photos Section
 .photos {
@@ -279,6 +299,7 @@ nav {
 }
 }
 
+
 .comment__icon {
   border-radius: 50%;
   height: 40px;
@@ -310,11 +331,12 @@ nav {
   @include tablet {
     font-size: 0.875rem;
   }
+
+  &--margin {
+    margin-block-start: 1rem;
+  }
 }
 
-.form__field--margin {
-  margin-block-start: 1rem;
-}
 
 .input__field {
   border-radius: 0.25rem;
@@ -455,7 +477,9 @@ nav {
 .comment__container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 86%;
+
+  
 }
 
 .comment__details--bold {
@@ -501,43 +525,45 @@ nav {
   @include desktop {
     padding: 3rem 7.5rem 2.25rem;
   }
-}
 
-.footer__container {
-  @include tablet {
-    display: flex;
-    justify-content: space-between;
+  &__container {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__container--max-width {
+    @include tablet {
+      width: 43.75rem;
+    }
+  }
+
+  &__container--flex {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      width: 23.7rem;
+    }
   }
 }
 
-.footer__container--max-width {
-  @include tablet {
-    width: 43.75rem;
-  }
-}
-
-.footer__container--flex {
-  @include tablet {
-    display: flex;
-    justify-content: space-between;
-    width: 23.7rem;
-  }
-}
 
 .section__title--white {
   color: white;
   margin-block-start: 0;
 }
 
-.footer__socials--flex {
-  @include tablet {
-    display: flex;
-    align-items: end;
-    padding-bottom: 2.75rem;
-  }
-}
 .footer__socials {
   padding-right: 1.5rem;
+
+  &--flex {
+    @include tablet {
+      display: flex;
+      align-items: end;
+      padding-bottom: 2.75rem;
+    }
+  }
 }
 
 .logo--hidden {

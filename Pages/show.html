@@ -8,23 +8,20 @@
     <title>Shows</title>
   </head>
   <body>
-    <nav>
-      <img
-        class="bandsite__logo"
-        src="../Assets/Logo/Logo-bandsite.svg"
-        alt="BandSite logo"
-      />
+    <nav class="nav">
+      <a href="../index.html">
+        <img class="bandsite__logo" src="../Assets/Logo/Logo-bandsite.svg" alt="BandSite logo">
+      </a>
       <ul class="nav__list nav__list--shows">
         <li class="nav__list-item nav__list-item--width">
-          <a class="nav__anchor nav__anchor--inactive" href="../index.html"
-            >Biography</a
-          >
+          <a class="nav__anchor nav__anchor--inactive nav__anchor--remove-padding" href="../index.html">Biography</a>
         </li>
         <li class="nav__list-item nav__list-item--active nav__list-item--resize">
           <a class="nav__anchor" href="./show.html">Shows</a>
         </li>
       </ul>
     </nav>
+
     <main class="hero--shows">
       <div class="hero__container">
         <div class="hero__titles">
@@ -67,8 +64,7 @@
             title="Ed Sheeran - Photograph"
             target="_blank"
             style="color: #cccccc; text-decoration: none"
-            >Ed Sheeran - Photograph</a
-         >
+            >Ed Sheeran - Photograph</a>
         </div>
       </div>
     </main>
@@ -82,7 +78,7 @@
           <span class="details--color">LOCATION</span>
         </div>
       </div>
-      <ul class="comment__list">
+      <ul class="comment__list comment__list--wide">
         <!-- <li>
           <div>
             <label class="date__details--color">DATE</label>
@@ -103,35 +99,18 @@
           <h2 class="section__title section__title--white">Get in Touch</h2>
           <div class="footer__socials--flex">
             <a href="https://www.instagram.com/">
-              <img
-                class="footer__socials"
-                src="../Assets/Icons/SVG/Icon-instagram.svg"
-                alt="Instagram logo"
-              />
+              <img class="footer__socials" src="../Assets/Icons/SVG/Icon-instagram.svg" alt="Instagram logo">
             </a>
             <a href="https://www.facebook.com/">
-              <img
-                class="footer__socials"
-                src="../Assets/Icons/SVG/Icon-facebook.svg"
-                alt="Facebook logo"
-              />
+              <img class="footer__socials" src="../Assets/Icons/SVG/Icon-facebook.svg" alt="Facebook logo">
             </a>
             <a href="https://twitter.com/">
-              <img
-                class="footer__socials"
-                src="../Assets/Icons/SVG/Icon-twitter.svg"
-                alt="Twitter logo"
-              />
+              <img class="footer__socials" src="../Assets/Icons/SVG/Icon-twitter.svg" alt="Twitter logo">
             </a>
           </div>
         </div>
-        <img
-          class="logo--hidden"
-          src="../Assets/Logo/Logo-bandsite.svg"
-          alt="Bandsite logo"
-        />
+        <img class="logo--hidden" src="../Assets/Logo/Logo-bandsite.svg" alt="Bandsite logo">
       </div>
-
       <div class="footer__container footer__container--max-width">
         <div>
           <p class="footer__subheader">
@@ -142,9 +121,7 @@
             503 Broadway Penthouse, <br />
             New York, NY 10012, USA
           </p>
-          <a href="mailto:info@thebeesknees.com" class="footer__body"
-            >info@thebeesknees.com</a
-          >
+          <a href="mailto:info@thebeesknees.com" class="footer__body">info@thebeesknees.com</a>
         </div>
         <div>
           <p class="footer__subheader">
@@ -155,9 +132,7 @@
             Booking Agent for <br />
             US / South America / Japan
           </p>
-          <a href="mailto:pearl.gregg@limitlessag.com" class="footer__body"
-            >pearl.gregg@limitlessag.com</a
-          >
+          <a href="mailto:pearl.gregg@limitlessag.com" class="footer__body">pearl.gregg@limitlessag.com</a>
         </div>
         <div>
           <p class="footer__subheader">
@@ -168,22 +143,17 @@
             Booking Agent for <br />
             UK / EU / AU
           </p>
-          <a href="mailto:cwhyte@archentertainment.com" class="footer__body"
-            >cwhyte@archentertainment.com</a
-          >
+          <a href="mailto:cwhyte@archentertainment.com" class="footer__body">cwhyte@archentertainment.com</a>
         </div>
       </div>
       <div>
-        <img
-          class="bandsite__logo bandsite__logo--padding"
-          src="../Assets/Logo/Logo-bandsite.svg"
-          alt="Bandsite logo"
-        />
+        <img class="bandsite__logo bandsite__logo--padding" src="../Assets/Logo/Logo-bandsite.svg" alt="Bandsite logo">
         <p class="footer__label">
           Copyright The Bees Knees © 2021 All Rights Reserved
         </p>
       </div>
     </footer>
-    <script src="../Styles/build-shows-page.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script type="module" src="../Scripts/build-shows-page.js"></script>
   </body>
 </html>
