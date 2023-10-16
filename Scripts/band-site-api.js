@@ -22,13 +22,17 @@ class BandSiteAPI {
 
     async getShows() {
         const response = await axios.get (`${this.baseURL}/showdates?api_key=${this.apiKey}`);
-        return response.data
+        return response.data;
+    }
+
+    async likeComments(commentsId) {
+        const response = await axios.put (`${this.baseURL}/comments/like?api_key=${this.apiKey}`, commentsId);
+        return response.data;
     }
 }
 
 // New instance of BandSiteAPI
 const bandSiteAPI = new BandSiteAPI("980bfdc7-c795-45a5-b04e-1bcc64308cae");
-
 
 
 export default BandSiteAPI;

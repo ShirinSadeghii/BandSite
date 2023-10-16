@@ -3,7 +3,7 @@ const bandSiteAPI = new BandSiteAPI("980bfdc7-c795-45a5-b04e-1bcc64308cae");
 
 
 let commentListEl = document.querySelector(".comment__list");
-let selectedCards = document.querySelectorAll(".comment__item");
+let selectedCards = '';
 
 
 async function getShows() {
@@ -14,7 +14,7 @@ async function getShows() {
 
   shows.forEach((show) => {
     let commentListItemEl = document.createElement("li");
-    commentListItemEl.classList.add("comment__item", "comment__item--flex", "comment--select");
+    commentListItemEl.classList.add("comment__item", "comment__item--flex");
     commentListEl.appendChild(commentListItemEl);
 
     let commentContainerEl = document.createElement("div");
@@ -58,22 +58,30 @@ async function getShows() {
     commentListItemEl.appendChild(buttonEl);
 
   });
+
+ selectedCards =  document.querySelectorAll(".comment__item");
+
+ let currentSelected = null;
+
+for (let i = 0; i < selectedCards.length; i++) {
+  selectedCards[i].addEventListener("click", function(event) {
+    console.log("Card clicked");
+    currentSelected = event.currentTarget;
+    console.log(currentSelected);
+
+    selectedCards.forEach((card)=>{
+      card.classList.remove("comment--select");
+    }); 
+
+    if (currentSelected) {
+      currentSelected.classList.add("comment--select"); //Remove active state from previous card.
+    } 
+  });
+}
 }
 
   getShows();
 
 
-let currentSelected = null;
 
-  for (let i = 0; i < selectedCards.length; i++) {
-  selectedCards[i].addEventListener("click", function(event) {
-      for (let i = 0; i < selectedCards.length; i++) {
-        if (currentSelected) {
-          currentSelected.classList.remove("comment--select"); //Remove active state from all other cards.
-        }
-          event.currentTarget.classList.toggle("comment--select");
-          currentSelected = event.currentTarget;
-    }
-  });
-}
 

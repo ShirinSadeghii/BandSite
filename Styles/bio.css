@@ -531,6 +531,16 @@ body {
   }
 }
 
+.button {
+  background-color: black;
+  color: white;
+  position: relative;
+  left: 16%;
+}
+.button--delete {
+  left: 20%;
+}
+
 .footer {
   background-color: #323232;
   padding: 0 1rem;

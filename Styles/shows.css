@@ -227,12 +227,16 @@ iframe {
   }
 }
 
-.comment__item--flex:hover {
-  background-color: #FAFAFA;
+.details--padding-left {
+  padding-left: 4rem;
 }
 
-.comment__item--flex:active {
-  background-color: #e1e1e1;
+.details--padding-right {
+  padding-right: 1rem;
+}
+
+.comment__item--flex:hover {
+  background-color: #FAFAFA;
 }
 
 @media (min-width: 768px) {
