@@ -13,6 +13,219 @@
   src: url(../Assets/Font/AvenirNextLTPro-Regular.otf);
   font-weight: 400;
 }
+body {
+  font-family: "Avenir";
+  margin: 0;
+}
+
+.nav {
+  background-color: #393939;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    padding-left: 2.25rem;
+    padding-top: 1.9rem;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 1280px) {
+  .nav {
+    padding-left: 7.5rem;
+    padding-top: 2.25rem;
+    padding-left: 6rem;
+  }
+}
+
+.bandsite-logo {
+  height: 1.25rem;
+  width: 7.5rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .bandsite-logo {
+    padding-bottom: 1.9rem;
+  }
+}
+
+.nav__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-inline-start: 0;
+  margin: 0;
+  font-size: 14px;
+  list-style-type: none;
+}
+@media (min-width: 768px) {
+  .nav__list {
+    justify-content: flex-start;
+    padding-left: 3.5rem;
+  }
+}
+.nav__list-item {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .nav__list-item {
+    width: 12%;
+  }
+}
+
+.nav__anchor {
+  text-decoration: none;
+  color: white;
+}
+
+.nav__list-item--active {
+  border-bottom: 0.25rem solid white;
+  padding-bottom: 0.625rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .nav__list-item--active {
+    padding-bottom: 1.9rem;
+    width: 4.4rem;
+  }
+}
+
+.nav__anchor--inactive {
+  color: #e1e1e1;
+}
+@media (min-width: 768px) {
+  .nav__anchor--inactive {
+    padding-left: 2.75rem;
+  }
+}
+@media (min-width: 1280px) {
+  .nav__anchor--inactive {
+    padding-left: 0;
+  }
+}
+
+.footer {
+  background-color: #323232;
+  padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding: 3rem 2.25rem 2.25rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer {
+    padding: 3rem 7.5rem 2.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .footer__container--max-width {
+    width: 43.75rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer__container--flex {
+    display: flex;
+    justify-content: space-between;
+    width: 23.7rem;
+  }
+}
+
+.section__title--white {
+  color: white;
+  margin-block-start: 0;
+}
+
+.footer__socials {
+  padding-right: 1.5rem;
+}
+@media (min-width: 768px) {
+  .footer__socials--flex {
+    display: flex;
+    align-items: end;
+    padding-bottom: 2.75rem;
+  }
+}
+
+.logo--hidden {
+  display: none;
+}
+@media (min-width: 768px) {
+  .logo--hidden {
+    display: flex;
+    padding-bottom: 2.25rem;
+  }
+}
+
+.footer__subheader {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.125rem;
+  padding-top: 1rem;
+  margin-block-start: 0.5rem;
+}
+@media (min-width: 768px) {
+  .footer__subheader {
+    padding-top: 0;
+    line-height: 1.25rem;
+    margin-block-start: 0;
+    margin-block-end: 1.5rem;
+  }
+}
+
+.footer__body {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 1.125rem;
+  margin-block-start: 0.8rem;
+}
+@media (min-width: 768px) {
+  .footer__body {
+    padding-top: 0;
+    line-height: 1.25rem;
+    margin-block-start: 0;
+    margin-block-end: 1.5rem;
+  }
+}
+
+.bandsite__logo--padding {
+  padding-top: 3.75rem;
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .bandsite__logo--padding {
+    display: none;
+  }
+}
+
+.footer__label {
+  color: white;
+  font-size: 10px;
+  padding-bottom: 1rem;
+  line-height: 1.25rem;
+}
+@media (min-width: 768px) {
+  .footer__label {
+    font-size: 14px;
+    padding: 2.25rem 0 0;
+    margin-block-end: 0;
+  }
+}
+
 /* Nav Section */
 @media (min-width: 768px) {
   .nav__list-item--width {
@@ -69,19 +282,18 @@
 .hero__titles {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .hero__title--font-size {
   font-size: 0.875rem;
   font-weight: 400;
   padding-top: 1.5rem;
-  margin-left: 0.5rem;
 }
 @media (min-width: 768px) {
   .hero__title--font-size {
     font-size: 1.5rem;
     padding: 3rem 2.25rem 0;
-    margin-left: 0.5rem;
   }
 }
 @media (min-width: 1280px) {
@@ -90,23 +302,19 @@
   }
 }
 
-.hero__title--margin {
-  margin-left: 0.5rem;
-}
-
-iframe {
+.iframe {
   width: 90%;
   height: auto;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
 }
 @media (min-width: 768px) {
-  iframe {
+  .iframe {
     width: 50%;
-    padding-left: 2.25rem;
+    padding-left: 2.5rem;
   }
 }
 @media (min-width: 1280px) {
-  iframe {
+  .iframe {
     position: relative;
     left: 12%;
     width: 40%;

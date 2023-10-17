@@ -24,11 +24,6 @@ class BandSiteAPI {
         const response = await axios.get (`${this.baseURL}/showdates?api_key=${this.apiKey}`);
         return response.data;
     }
-
-    async likeComments(commentsId) {
-        const response = await axios.put (`${this.baseURL}/comments/like?api_key=${this.apiKey}`, commentsId);
-        return response.data;
-    }
 }
 
 // New instance of BandSiteAPI

@@ -44,22 +44,6 @@ async function getComments() {
     wordDetailEl.classList.add("comment__details", "comment__details--position");
     wordDetailEl.innerText = comment.comment;
     commentListItemEl.appendChild(wordDetailEl);
-
-    let likeCountEl = document.createElement("span");
-    likeCountEl.classList.add("like-count");
-    likeCountEl.innerText = "Like: ";
-    commentListItemEl.appendChild(likeCountEl);
-
-    let likeCommentEl = document.createElement("button");
-    likeCommentEl.classList.add("button");
-    likeCommentEl.innerText = "Like";
-    commentListItemEl.appendChild(likeCommentEl);
-
-    let deleteCommentEl = document.createElement("button");
-    deleteCommentEl.classList.add("button", "button--delete");
-    deleteCommentEl.innerText = "Delete";
-    commentListItemEl.appendChild(deleteCommentEl);
-
   });
 }
 
@@ -81,11 +65,5 @@ formEl.addEventListener("submit", async function(event) {
 });
 
 getComments();
-
-
-
-async function likeComments(commentsId) {
-
-}
 
 

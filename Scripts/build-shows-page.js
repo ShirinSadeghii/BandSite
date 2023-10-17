@@ -79,7 +79,6 @@ for (let i = 0; i < selectedCards.length; i++) {
   });
 }
 }
-
   getShows();
 
 
