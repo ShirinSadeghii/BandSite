@@ -11,7 +11,7 @@ Git and GitHub: Employed version control to manage code changes and collaboratio
 
 ## Functional Requirements ##
 
-BandSiteApi Class
+### BandSiteApi Class ###
 
 Implemented a class named BandSiteApi with the following methods:
 
