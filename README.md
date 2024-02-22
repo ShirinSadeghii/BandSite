@@ -1,5 +1,5 @@
 ## Images: ##
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/r88lnBn"  ><a href="//imgur.com/a/r88lnBn">BandSite Portfolio</a></blockquote>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/r88lnBn"><a href="//imgur.com/a/r88lnBn">BandSite Portfolio</a></blockquote>
 
 ## Overview ##
 
